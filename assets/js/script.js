@@ -1,5 +1,8 @@
 
 
+var loadR;
+let bot = document.getElementById('myBtn');
+let root = document.getElementById('root')
 
 $('#carousel-example').on('slide.bs.carousel', function (e) {
   /*
@@ -25,11 +28,17 @@ $('#carousel-example').on('slide.bs.carousel', function (e) {
 });
 
 
-
-
-
-
-
+function change(){
+    if(window.pageYOffset >  500  ){
+     bot.style.display = 'inline';
+    }
+    if(window.pageYOffset <  500  ){
+        bot.style.display = 'none';
+    }
+}
+setTimeout(function(){
+ root.style.overflow ='visible'
+},10000)
 
 function topFunction() {
   document.body.scrollTop = 0;

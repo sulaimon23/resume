@@ -12,6 +12,8 @@ body {
     background: #191D28;
     color: white;
     width: 100%;
+    overflow: hidden;
+    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -380,7 +382,19 @@ textarea {
     margin: 10px auto;
     padding: 10px;
 }
-
+.text-center{
+    z-index: 999999999;
+    background: black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
 #myBtn {
     display: none;
     position: fixed;
@@ -637,4 +651,36 @@ textarea {
 
 .ku {
     text-align: center;
+}
+
+@keyframes pat{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.text-center{
+    animation-name: pat;
+    animation-duration: 9s;
+    pointer-events: none;
+    animation-iteration-count: 1;
+    height: 100vh;
+    overflow: hidden;
+}
+#myBtn i{
+    font-size: 35px;
+    color: #F05E23;
+    font-weight: 300;
 }
