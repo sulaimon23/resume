@@ -463,9 +463,11 @@ textarea {
 .navbar-toggler {
     color: #F05E23;
     border-color: rgb(246, 1, 1);
-    background: #e49e9e69;
+    background: transparent;
 }
-
+.navbar-nav{
+    text-align: right;
+}
 
 
 
@@ -743,9 +745,10 @@ textarea {
     }
 }
 
+
 .text-center {
     animation-name: pat;
-    animation-duration: 9s;
+    animation-duration:3s;
     pointer-events: none;
     animation-iteration-count: 1;
     height: 100vh;

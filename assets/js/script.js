@@ -38,7 +38,7 @@ function change(){
 }
 setTimeout(function(){
  root.style.overflow ='visible'
-},10000)
+},3000)
 
 function topFunction() {
   document.body.scrollTop = 0;
