@@ -44,3 +44,38 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
  };
+
+
+ let theme = localStorage.getItem('theme');
+ if(theme == null){
+  setTheme('light')
+ }else{
+  setTheme(theme)
+ }
+ 
+ 
+ let themeDots = document.getElementsByClassName('theme-dot');
+ 
+ for(var i=0; themeDots.length > i; i++){
+  themeDots[i].addEventListener('click',function(){
+   let swip = this.dataset.mode
+   console.log(swip)
+   setTheme(swip);
+  })
+ }
+ 
+ function setTheme(swip){
+  if(swip == 'light'){
+   document.getElementById('theme-style').href = './assets/css/style.css'
+  }
+  if(swip == 'red'){
+   document.getElementById('theme-style').href = './assets/css/red.css'
+  }
+  if(swip == 'green'){
+   document.getElementById('theme-style').href = './assets/css/green.css'
+  }
+  if(swip == 'blue'){
+   document.getElementById('theme-style').href = './assets/css/blue.css'
+  }
+  localStorage.setItem('theme', swip)
+ }

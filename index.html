@@ -4,30 +4,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>T.S </title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="./assets/css/animate.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
-
+	<link id="theme-style" rel="stylesheet" href="./assets/css/red.css" type="text/css">
+	<link rel="icon" href="./assets/img/TS_.ico">
 
 </head>
 
 <body onscroll="change(this)" id="root">
 
-<div class="text-center" >
-  <div class="spinner-border" role="status">
-    <span class="sr-only">Loading...</span>
-  </div>
-</div>
+	<div class="text-center">
+		<div class="spinner-border" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
 
 
 	<!-- nav bar -->
 	<div class=" header fixed-top montserrat">
 		<nav class="navbar navbar-expand-md navbar-light bg-black">
-			<a class="navbar-brand john" href="#">JOHN</a>
+			<img src="./assets/img/TS({...props}).png" alt="" class="log">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
 				aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -38,38 +39,49 @@
 						<a class="nav-link text-danger" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-danger" href="#">About</a>
+						<a class="nav-link text-danger" href="#experience">Experience</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-danger" href="#">Services</a>
+						<a class="nav-link text-danger" href="#services">Services</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-danger" href="#">Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-danger" href="#">Contact</a>
+						<a class="nav-link text-danger" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
 
+
+	<div  class="animated pulse infinite" id="theme-options-wrapper">
+		<div data-mode="light" id="light-mode" class="theme-dot"></div>
+		<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+		<p class="the"> change theme</p>
+		<div data-mode="green" id="green-mode" class="theme-dot"></div>
+		<div data-mode="red" id="red-mode" class="theme-dot"></div>
+	</div>
+
+
+
+
+
+
 	<!-- showcase -->
-	<div class="container my-5 montserrat">
+	<div class="container montserrat" id="up">
 		<div class="row">
-			<div class="col-md-5 my-auto align-self-center wow fadeInDown">
+			<div class="col-md-7 align-self-center wow fadeInDown">
 				<div>
 					<h6>Hi there!</h6>
-					<h1>I'm <span class="con">Josh Kennedy</span></h1>
-					<p>Front-End Developer, Web Designer, Graphics artist, Digital Illustrator available for
+					<h1>I'm<br> <span class="con">TAIWO SULAIMON</span></h1>
+					<p>Front-End Developer, Graphics artist, React.js,Git, Bootstrap,Jquery.<br>Available for
 						freelance/contract jobs anywhere around the world</p>
-					<button class="btn btn-danger">Contact Me</button>
+					<a target="_blank" href="https://linkedin.com/in/taiwo-sulaimon-9952b6179">
+						<button class="btn btn-danger">Contact Me</button>
+					</a>
 				</div>
 			</div>
-			<div class="col-md-7 wow fadeInDown">
-				<div class="inner">
-
-				</div>
+			<div class="col-md-5 wow fadeInDown">
+					<img src="./assets/img/IMG_20191217_112341_4.png" alt="" id="me2">
 			</div>
 		</div>
 	</div>
@@ -80,29 +92,33 @@
 		<div class="row">
 			<div class="col-md-6 wow fadeInDown">
 				<div class="inner2">
-
+					<img src="./assets/img/IMG_20191217_112343_1-removebg.png" alt="" id="me1">
 				</div>
 			</div>
 			<div class="col-md-6 my-auto align-self-center wow fadeInUp">
 				<div>
 					<h1 class="con">About me</h1>
-					<p>I create websites and digital arts for people, with about 6 years experience, i have over 100
-						satusfied clients.</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga explicabo illo quasi vel! Aliquid,
-						aspernatur! Quaerat saepe architecto doloremque perferendis!</p>
+					<p>I create websites and digital arts for people,Also an innovator Owing to extensive experience in
+						creating and managing
+						processes, I am positive of my ability to contribute extensively to any Organization.</p>
+					<p>I am confident that you will find my expertise parallel with your requirements for a
+						Front End Developer. </p>
+					<hr style="border: 1px solid rgba(195, 186, 186, 0.603);">
 					<div class="prog">
 						<div>
-							<span class="inside">Graphics Design</span>
-						<a class="pers">90%</a>
+							<span class="inside">Team Collaboration</span>
+							<a class="pers">90%</a>
 						</div>
 						<progress max="100" value="90"></progress><br>
 						<div>
-							<span class="inside">Graphics Design
+							<span class="inside">Web Development
 							</span><a class="pers2">95%</a>
 						</div>
 						<progress max="100" value="95"> </progress><br>
 					</div>
-					<button class="btn btn-danger">Resume</button>
+					<a href="./assets/Tass.pdf" target="_blank">
+						<button class="btn btn-danger">Resume</button>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -112,10 +128,10 @@
 
 	<!-- services -->
 
-	<div class="container my-5 services montserrat">
+	<div class="container my-5 services montserrat" id="services">
 		<center>
 			<h1 class="con">Services</h1>
-			<p>Lorem ipsum dolor sit amet consectetur Voluptas, tempore!</p>
+			<p>Few of the things i do!</p>
 		</center>
 
 		<div class="row h-100">
@@ -125,7 +141,7 @@
 						<div>
 							<img src="./assets/img/XMLID 345.png" alt="">
 							<h3>Design Illustration</h3>
-							<p>Perfect user experience is the best, contact me for your product design projects</p>
+							<p>Hands On experience working with arious designers</p>
 						</div>
 					</div>
 				</center>
@@ -135,9 +151,8 @@
 					<div class="badg">
 						<div>
 							<img src="./assets/img/_Group_.png" alt="">
-							<h3>UI/UX Design</h3>
-							<p>With my years of experince with digital art and illustration to give your brand a name
-								and identity</p>
+							<h3>Buddind Full Stack Developer</h3>
+							<p>Experience with working with backend languages like Node.js, PHP, Django.</p>
 						</div>
 					</div>
 				</center>
@@ -148,7 +163,8 @@
 						<div>
 							<img src="./assets/img/website coding and gear.png" alt="">
 							<h3>Web Development</h3>
-							<p>Extensive backend skills to take on any web development project to your satisfaction</p>
+							<p>Extensive Web Development skills to take on any web development project to your
+								satisfaction</p>
 						</div>
 					</div>
 				</center>
@@ -161,14 +177,7 @@
 	<div class="container project montserrat">
 		<center>
 			<h1 class="con">Latest Project</h1>
-			<p>Lorem ipsum dolor sit amet consectetur Voluptas, tempore!</p>
-		</center>
-
-		<center class="my-5">
-			<li><a href="#">All</a></li>
-			<li><a href="#">Graphics</a></li>
-			<li><a href="#">UI/UX</a></li>
-			<li><a href="#">Web Development</a></li>
+			<p>Check Out some of my Projects!</p>
 		</center>
 		<div class="row up">
 			<div class="col-md-4 wow slideInLeft">
@@ -182,28 +191,30 @@
 				<img src="./assets/img/pencil-typography-black-design 1.png" alt="">
 				<div>
 					<h1>Savet</h1>
-					<p>UI/UX</p>
+					<p>Graphics</p>
 				</div>
 			</div>
 			<div class="col-md-4 wow slideInRight">
 				<img src="./assets/img/yellow-metal-design-decoration 1.png" alt="">
 				<div>
-					<h1>Kiakia</h1>
+					<h1>adspace.com</h1>
 					<p>Web Development</p>
 				</div>
 			</div>
 			<div class="col-md-4 wow slideInLeft">
 				<img src="./assets/img/photo-1489533119213-66a5cd877091 1.png" alt="">
 				<div>
-					<h1>Brann</h1>
-					<p>Graphics</p>
+					<h1>d-subtletech.com
+					</h1>
+					<p>Web Development</p>
 				</div>
 			</div>
 			<div class="col-md-4 wow slideInUp">
 				<img src="./assets/img/photo-1513521773210-0cc22dfee8db 1.png" alt="">
 				<div>
-					<h1>Roast</h1>
-					<p>UI/UX</p>
+					<h1>olivelegalpractitioners.com
+					</h1>
+					<p>Web Development</p>
 				</div>
 			</div>
 			<div class="col-md-4 wow slideInRight">
@@ -223,15 +234,15 @@
 			<center>
 				<div class="row">
 					<div class="col-sm-4">
-						<h1>152&#43;</h1>
+						<h1>35&#43;</h1>
 						<p>Project Completed</p>
 					</div>
 					<div class="col-sm-4">
-						<h1>60&#43;</h1>
+						<h1>6&#43;</h1>
 						<p>Satisfied Client</p>
 					</div>
 					<div class="col-sm-4">
-						<h1>12&#43;</h1>
+						<h1>16&#43;</h1>
 						<p>Current Partners</p>
 					</div>
 				</div>
@@ -255,204 +266,205 @@
 	<div class="container-fluid">
 		<div class="top">
 			<div class="container top-content">
-							<div id="carousel-example" class="carousel slide" data-ride="carousel">
-											<div class="carousel-inner row  mx-auto" role="listbox">
-															<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-																<div class="pad15">
-																	<img src="./assets/img/photo-1570295999919-56ceb5ecca61 1.png" alt="">
-																	<h6>I had the opportunity to work with josh on a project last year, great team lead I must say.</h6>
-																	<h1>Rick Morty</h1>
-																	<p>Product Designer</p>
-																</div>
-															</div>
-															<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-																<div class="pad15">
-																	<img src="./assets/img/photo-1508214751196-bcfd4ca60f91 1.png" alt="">
-																	<h6>I’ve worked with Josh on multiple projects and i can say he’s an amazing person to collaborate with </h6>
-																	<h1>Hussain</h1>
-																	<p>Product Designer</p>
-																</div>
-																
-															</div>
-															<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-																<div class="pad15">
-																	<img src="./assets/img/man -portfolio 1.png" alt="">
-																	<h6>Josh developed my websites, he really keeps to time and he’s a well deailed person. I recommend 100%</h6>
-																	<h1>Jane Modric</h1>
-																	<p>Product Designer</p>
-																</div>
-															</div>
-															<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-																<div class="pad15">
-																	<img src="./assets/img/photo-1570295999919-56ceb5ecca61 1.png" alt="">
-																	<h6>I had the opportunity to work with josh on a project last year, great team lead I must say.</h6>
-																	<h1>Rick Morty</h1>
-																	<p>Product Designer</p>
-																</div>
-															</div>
-															<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-																<div class="pad15">
-																	<img src="./assets/img/photo-1508214751196-bcfd4ca60f91 1.png" alt="">
-																	<h6>I’ve worked with Josh on multiple projects and i can say he’s an amazing person to collaborate with </h6>
-																	<h1>Hussain</h1>
-																	<p>Product Designer</p>
-																</div>
-																
-															</div>
-															<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-																<div class="pad15">
-																	<img src="./assets/img/man -portfolio 1.png" alt="">
-																	<h6>Josh developed my websites, he really keeps to time and he’s a well deailed person. I recommend 100%</h6>
-																	<h1>Jane Modric</h1>
-																	<p>Product Designer</p>
-																</div>
-															</div>
-															<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-																<div class="pad15">
-																	<img src="./assets/img/photo-1508214751196-bcfd4ca60f91 1.png" alt="">
-																	<h6>I’ve worked with Josh on multiple projects and i can say he’s an amazing person to collaborate with </h6>
-																	<h1>Hussain</h1>
-																	<p>Product Designer</p>
-																</div>
-																
-															</div>
-															<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-																<div class="pad15">
-																	<img src="./assets/img/photo-1570295999919-56ceb5ecca61 1.png" alt="">
-																	<h6>I had the opportunity to work with josh on a project last year, great team lead I must say.</h6>
-																	<h1>Rick Morty</h1>
-																	<p>Product Designer</p>
-																</div>
-															</div>
-											</div>
-										
+				<div id="carousel-example" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner row  mx-auto" role="listbox">
+						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+							<div class="pad15">
+								<h6>I had the opportunity to work with Sulaimon on a project last year, great team lead I
+									must say.</h6>
+								<h1>Benjamin</h1>
+								<p>Designer</p>
 							</div>
+						</div>
+						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="pad15">
+								<h6>I’ve worked with Sulaimon on multiple projects and i can say he’s an amazing person to
+									collaborate with </h6>
+								<h1>Iyiola</h1>
+								<p>JavaScript Developer</p>
+							</div>
+
+						</div>
+						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="pad15">
+								<h6>Sulaimon developed my websites, he really keeps to time and he’s a well deailed person.
+									I recommend 100%</h6>
+								<h1>Opel</h1>
+								<p>Adpace</p>
+							</div>
+						</div>
+						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="pad15">
+								<h6>I had the opportunity to work with Sulaimon on a project last year, great team lead I
+									must say.</h6>
+								<h1>Oduche</h1>
+								<p>Developer</p>
+							</div>
+						</div>
+						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="pad15">
+								<h6>I’ve worked with Sulaimon on multiple projects and i can say he’s an amazing person to
+									collaborate with </h6>
+								<h1>Gideon</h1>
+								<p>Back End Developer</p>
+							</div>
+
+						</div>
+						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="pad15">
+								<h6>Sulaimon developed my websites, he really keeps to time and he’s a well deailed person.
+									I recommend 100%</h6>
+								<h1>Opel</h1>
+								<p>Adspace</p>
+							</div>
+						</div>
+						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="pad15">
+								<h6>I’ve worked with Sulaimon on multiple projects and i can say he’s an amazing person to
+									collaborate with </h6>
+								<h1>Gideon</h1>
+								<p>Back End Developer</p>
+							</div>
+
+						</div>
+						<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+							<div class="pad15">
+								<h6>I had the opportunity to work with Sulaimon on a project last year, great team lead I
+									must say.</h6>
+								<h1>Oduche</h1>
+								<p>Developer</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
 			</div>
-	<div class="icon">
-		<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-	</a>
-	</div>
-	</div>
-	</div>
-
-
-
-
-
-
-<!-- experience -->
-
-<div class="container my-3 car montserrat">
-	<center>
-		<h1 class="con">Work Experience</h1>
-		<p>My work experience over the years</p>
-	</center>
-</div>
-
-<div class="container my-auto montserrat ku">
-	<div class="row">
-		<div class="col-md-6 wow fadeInDown my-auto align-self-center">
-			<div class="innet">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+			<div class="icon">
+				<a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-		</div>
-		<div class="col-md-6 mt-3	 align-self-center wow fadeInUp">
-			<div class="ml-auto">
-				<h2>UI/UX Designer</h2>
-				<h1 class="con">Redox Robotics</h1>
-				<p>February 2010 - December 2011</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container my-auto montserrat ku">
-	<div class="row">
-		<div class="col-md-5 my-auto align-self-center wow fadeInDown">
-			<div >
-				<h2>Graphics Designer</h2>
-				<h1 class="con">Cradle Limited</h1>
-				<p>June 2012 - July 1023</p>
-			</div>
-		</div>
-		<div class="col-md-7 wow fadeInDown my-auto align-self-center">
-			<div class="innet">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container my-auto montserrat ku">
-	<div class="row">
-		<div class="col-md-6 wow fadeInDown my-auto align-self-center">
-			<div class="innet">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-			</div>
-		</div>
-		<div class="col-md-6 mt-3 align-self-center wow fadeInUp">
-			<div class="m-auto">
-				<h2>Web Developer</h2>
-				<h1 class="con">Hotels.ng</h1>
-				<p>March 2014 - Present</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<!-- contact me -->
-
-<div class="container my-5 car montserrat">
-	<center>
-		<h1 class="con">Contact Me</h1>
-		<p>Do you have a project in mind? let’s work together</p>
-	</center>
-</div>
-<div class="container cont wow fadeInUp">
-	<div class="row">
-		<div class="col-md-6">
-			<h1>Hit me up, let’s create magic together,<br> Or you can just say <span class="con">Hello ?</span></h1>
-			<li><a href="#">+123 27059 3133 03</a></li>
-			<li><a href="#">Josh@mail.com</a></li>
-			<li><a href="#">Kentucky, USA</a></li>
-			<div class="lin">
-				<li><a href="#"><img src="./assets/img/Vector (1).png" alt=""></a></li>
-				<li><a href="#"><img src="./assets/img/Vector.png" alt=""></a></li>
-				<li><a href="#"><img src="./assets/img/Vector (3).png" alt=""></a></li>
-				<li><a href="#"><img src="./assets/img/Vector (2).png" alt=""></a></li>
-			</div>
-		</div>
-		<div class="col-md-6">
-			<div>
-				<input type="text" placeholder="Name">
-			</div>
-			<div>
-				<input type="text" placeholder="Email Address">
-			</div>
-			<div>
-				<input type="text" placeholder="Phone Number">
-			</div>
-			<div>
-				<textarea name="discrip" id="" cols="30" rows="4" placeholder="Project Description"></textarea>
-			</div>
-			<button class="btn btn-danger">Contact Me</button>
 		</div>
 	</div>
-</div>
-
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up animated bounce infinite slow"></i></button>
 
 
-<div class="fut">
-	All Rights Reserved. <span style="color: #F05E23;">Josh 2020</span>  
-</div>
+
+
+
+
+	<!-- experience -->
+
+	<div class="container my-3 car montserrat" id="experience">
+		<center>
+			<h1 class="con">Work Experience</h1>
+			<p>My work experience over the years</p>
+		</center>
+	</div>
+
+	<div class="container my-auto montserrat ku">
+		<div class="row">
+			<div class="col-md-6 wow fadeInDown my-auto align-self-center">
+				<div class="innet">
+					I worked as a web developer during my time in I.D.C. worked on different project and also with various designers.
+				</div>
+			</div>
+			<div class="col-md-6 mt-3	 align-self-center wow fadeInUp">
+				<div class="ml-auto">
+					<h2>Web Developer</h2>
+					<h1 class="con">I.D.C. Lagos, Nigeria.</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container my-auto montserrat ku">
+		<div class="row">
+			<div class="col-md-5 my-auto align-self-center wow fadeInDown">
+				<div>
+					<h2>Facilitator</h2>
+					<h1 class="con">Code Week</h1>
+				</div>
+			</div>
+			<div class="col-md-7 wow fadeInDown my-auto align-self-center">
+				<div class="innet">
+					I worked as a Facilitator teaching students web development,taking them through several project development.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container my-auto montserrat ku">
+		<div class="row">
+			<div class="col-md-6 wow fadeInDown my-auto align-self-center">
+				<div class="innet">
+					I worked as a Graphics Desiner during my time in A.C.I worked on different project and also with various designers.
+				</div>
+			</div>
+			<div class="col-md-6 mt-3 align-self-center wow fadeInUp">
+				<div class="m-auto">
+					<h2>Web Developer</h2>
+					<h1 class="con">Amazeen Computer Institute</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- contact me -->
+
+	<div class="container my-5 car montserrat" id="contact">
+		<center>
+			<h1 class="con">Contact Me</h1>
+			<p>Do you have a project in mind? let’s work together</p>
+		</center>
+	</div>
+	<div class="container cont wow fadeInUp">
+		<div class="row">
+			<div class="col-md-6">
+				<h1>Hit me up, let’s create magic together,<br> Or you can just say <span class="con">Hello ?</span>
+				</h1>
+				<li><a>+234 7059 313 3303</a></li>
+				<li><a>tsulaimon96@gmail.com</a></li>
+				<li><a>Lagos, Nigeria</a></li>
+				<div class="lin">
+					<li title="Twitter"><a target="_blank" href="https://twitter.com/sulaimon122"><img src="./assets/img/Vector (1).png"
+								alt=""></a></li>
+					<li title="LinkedIn"><a target="_blank" href="https://linkedin.com/in/taiwo-sulaimon-9952b6179"><img
+								src="./assets/img/Vector.png" alt=""></a></li>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<form method="POST"  id="contactForm" action="//formspree.io/tsulaimon96@gmail.com">
+					<div>
+						<input name="name" type="text" placeholder="Name" required>
+					</div>
+					<div>
+						<input name="email" type="email" placeholder="Email Address" required>
+					</div>
+					<div>
+						<input name="number" type="text" placeholder="Phone Number" required>
+					</div>
+					<div>
+						<textarea name="message" id="" cols="30" rows="4" placeholder="Project Description" required></textarea>
+					</div>
+					<button class="btn btn-danger" type="submit" value="send">Submit </button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i
+			class="fa fa-arrow-up animated bounce infinite slow"></i></button>
+
+
+	<div class="fut">
+		All Rights Reserved. <span style="color: #F05E23;">T.S 2020</span>
+	</div>
 
 
 

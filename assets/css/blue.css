@@ -1,0 +1,27 @@
+
+
+
+
+
+body {
+ background: #000263;
+ color: rgb(255, 255, 255);
+}
+.con {
+ color: #ff0202;
+}
+.btn-danger {
+ background: #000000;
+}
+.badg {
+ border: 2px solid #000000;
+}
+.up h1{
+ color: rgb(255, 255, 255);
+}
+.pad15{
+ border: 2px solid black;
+}
+.cont li a{
+ color: rgb(3, 190, 28);
+}

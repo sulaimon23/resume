@@ -10,7 +10,7 @@ html {
 
 body {
     background: #191D28;
-    color: white;
+    color: rgb(168, 163, 163);
     width: 100%;
     overflow: hidden;
     height: 100vh;
@@ -33,7 +33,7 @@ body {
 }
 
 .header nav a {
-    color: white !important;
+    color: rgb(236, 216, 216) !important;
     font-size: 18px;
     line-height: 22px;
 }
@@ -49,30 +49,28 @@ body {
     border-bottom: 1px solid #F05E23;
     width: 100%;
 }
-
-.header nav .john {
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 37px;
-    color: #F05E23 !important;
+.nav-link{
+    margin: 0 15px;
 }
 
-.inner {
-    background: url('../img/man-p-removebg-preview\ 1.png');
-    height: 472px;
-    width: 100%;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.log {
+    display: block;
+    width: 150px;
+    object-fit: contain;
 }
 
-.inner2 {
-    background: url('../img/man-using-macbook-and-iphone-x-2764676\ 1.png');
-    height: 472px;
-    width: 100%;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+#up {
+    margin-top: 70px !important;
+}
+#me1{
+    width: 300px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+#me2{
+    margin: 0;
+    height:400px;
+    object-fit: contain;
 }
 
 progress {
@@ -98,7 +96,7 @@ progress::-webkit-progress-value {
 .con {
     font-style: normal;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 43px;
     color: #F05E23;
     margin-bottom: 0;
@@ -143,8 +141,54 @@ button {
     font-weight: normal;
     font-size: 15px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #c5bfbfa4;
 }
+
+/* theme dots */
+
+.theme-dot{
+    background: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px ;
+}
+#theme-options-wrapper{
+    position: absolute;
+    z-index: 100;
+    right:20px;
+}
+#theme-options-wrapper .the{
+    transform: rotate(90deg);
+    margin:70px 0px;
+    font-style: italic;
+}
+.theme-dot:hover{
+    border-width: 7px;
+}
+#light-mode{
+    background: rgb(93, 92, 92);
+}
+#blue-mode{
+    background: blue;
+}
+#green-mode{
+    background: green;
+}
+#red-mode{
+    background: red;
+}
+
+
+
+
+
+
+
+
+
 
 .badg {
     border: 1px solid #F05E23;
@@ -168,7 +212,7 @@ button {
     font-size: 17px;
     line-height: 22px;
     text-align: center;
-    color: #FFFFFF;
+    color: #c4c0c0;
     margin-top: 10px;
     margin-bottom: 0px;
 }
@@ -188,7 +232,7 @@ button {
 }
 
 .badg:hover img {
-    background: #FFFFFF;
+    background: #bdbaba;
 }
 
 .project li {
@@ -202,7 +246,7 @@ button {
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #cfcccc;
 }
 
 .project li a:hover {
@@ -233,7 +277,7 @@ button {
     font-weight: normal;
     font-size: 15px;
     line-height: 23px;
-    color: #FFFFFF;
+    color: #b4adad;
 }
 
 .up .col-md-4 div {
@@ -264,7 +308,7 @@ button {
     font-weight: 600;
     font-size: 15px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: #bdbaba;
 }
 
 .car {
@@ -306,7 +350,7 @@ button {
     font-weight: 400;
     font-size: 12px;
     text-align: center;
-    color: #FFFFFF;
+    color: #bdbaba;
 }
 
 .pad15 h6 {
@@ -314,14 +358,14 @@ button {
     font-weight: normal;
     font-size: 15px;
     text-align: center;
-    color: #FFFFFF;
+    color: #bdbaba;
     margin-top: 20px;
 }
 
 
 .innet {
     background: #F05E23;
-    color: white;
+    color: rgb(255, 251, 251);
     font-size: 18px;
     padding: 25px;
 }
@@ -382,7 +426,8 @@ textarea {
     margin: 10px auto;
     padding: 10px;
 }
-.text-center{
+
+.text-center {
     z-index: 999999999;
     background: black;
     position: absolute;
@@ -395,6 +440,7 @@ textarea {
     right: 0;
     opacity: 0;
 }
+
 #myBtn {
     display: none;
     position: fixed;
@@ -456,6 +502,28 @@ textarea {
     .car p {
         margin-bottom: 0;
     }
+    
+.theme-dot{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 2px ;
+}
+#theme-options-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#theme-options-wrapper .the{
+    transform: rotate(0deg);
+    margin:0px 0px;
+    font-style: italic;
+    font-size: 12px;
+}
+.theme-dot:hover{
+    border-width: 7px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -653,25 +721,29 @@ textarea {
     text-align: center;
 }
 
-@keyframes pat{
-    0%{
+@keyframes pat {
+    0% {
         opacity: 1;
     }
-    50%{
+
+    50% {
         opacity: 1;
     }
-    60%{
+
+    60% {
         opacity: 1;
     }
-    95%{
+
+    95% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
 
-.text-center{
+.text-center {
     animation-name: pat;
     animation-duration: 9s;
     pointer-events: none;
@@ -679,7 +751,8 @@ textarea {
     height: 100vh;
     overflow: hidden;
 }
-#myBtn i{
+
+#myBtn i {
     font-size: 35px;
     color: #F05E23;
     font-weight: 300;
